@@ -16,7 +16,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    max-width: 11rem;
+    max-width: 8rem;
 }
 
 .nav-links {
@@ -42,7 +42,7 @@ nav {
 
 .social-media-buttons {
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 1rem;
     background-color: #FFA552;
     border-radius: 4rem;
@@ -134,7 +134,7 @@ footer p {
     
 }
 
-#nosotros, #adoptar, #contacto, #castraciones {
+#nosotros, #adoptar, #contacto, #novedades {
     margin: 0 3rem;
 }
 
@@ -164,7 +164,7 @@ footer p {
 
 .card {
     border-radius: 60px;
-    border: #FFA552 solid 4px;
+    border: #FFA552 solid 3px;
     box-sizing: content-box;
     width: 15rem;
 }
@@ -232,6 +232,15 @@ details summary:hover, details summary:focus {
     background-color: #6BCB77;
     border: none;
     color: #FFF9F1;
+}
+
+details p {
+    margin: 0.8rem 
+}
+
+.check {
+    color: #6BCB77;
+    margin: 0.2rem;
 }
 
 /* Nosotros*/
