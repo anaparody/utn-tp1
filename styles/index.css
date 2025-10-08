@@ -11,6 +11,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    flex-wrap: wrap;
 
 }
 
@@ -139,7 +140,7 @@ footer p {
     
 }
 
-#nosotros, #adoptar, #contacto{
+#nosotros, #adoptar, #contacto, #galeria{
     margin: 0 3rem;
 }
 
@@ -277,15 +278,16 @@ details p {
     border-radius: 60px;
     border: #FFA552 solid 4px;
     box-sizing: content-box;
-    width: 25rem;
+    width: 23rem;
 }
 
 .team-img {
     width: 100%;
-    height: 17rem;
+    height: 14rem;
     object-fit: cover;
     border-radius: 55px 55px 0px 0px;
     max-width: 100%;
+    position: center;
     
 }
 
@@ -293,7 +295,7 @@ details p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.8rem;
     
 }
 
@@ -301,6 +303,12 @@ details p {
     font-weight: 600;
     color: #FFA552;
     margin: 0;
+    padding: 0.5rem;
+    font-size: 1.6em;
+}
+
+.team-text {
+    font-size: 0.9em;
 }
 
 h2 {
@@ -431,26 +439,27 @@ textarea {
 }
 
 /*Galeria*/
+
 .gallery-container {
     display: flex;
-    
-    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100vw;
+    width: 100%;
+    margin: 1rem;
 }
 
 .gallery-container img {
-    width: 500px;
+    max-inline-size: 100%;
+    display: block;
+    width: 400px;
     height: 300px;
     object-fit: cover;
-    object-position: bottom;
-    padding: 0.5rem;
     border-radius: 2rem;
-
+    padding: 0.3rem;
 }
 
 .gallery-container img:hover {
     cursor: pointer;
-    filter: brightness(0.4);
-    
+    filter: brightness(0.5)
 }
