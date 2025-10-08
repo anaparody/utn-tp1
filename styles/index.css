@@ -1,6 +1,7 @@
 body {
     background-color: #FFF9F1;
     color: #2E2E2E;
+    font-family: "Nunito", Helvetica, sans-serif;
 }
 
 /* Header */
@@ -9,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1rem;
 
 }
 
@@ -28,8 +29,8 @@ nav {
 
 .nav-links a {
     display: block;
-    padding: 1.4rem;
-    font-size: 1em;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.1em;
     transition: all ease-in-out 100ms;
     font-weight: 600;
     color: #6BCB77;
@@ -54,6 +55,10 @@ nav {
 .social-media-buttons a{
     color: #FFF9F1;
     font-size: 1.2em;
+}
+
+.social-media-buttons a:hover {
+    color: #6BCB77;
 }
 
 /*Footer*/
@@ -84,7 +89,7 @@ footer p {
 .c-img {
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4);
+    filter: brightness(0.35);
 
 }
 
@@ -111,30 +116,30 @@ footer p {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    background-color: #FFA552;
     border: none;
     outline: none;
     color: #FFF9F1;
     width: 4.8rem;
     height: 4.8rem;
-    border-radius: 4rem;
-    transition: all 100ms ease-in;
+    
     text-align: center;
     z-index: 99;
 }
 
 #scroll-top i {
     font-size: 3em;
+    background-color: #FFA552;
+    border-radius: 5rem;
+    padding: 0.1rem 0.7rem;
+    transition: all 100ms ease-in;
 }
 
-#scroll-top:hover {
+#scroll-top i:hover {
     background-color: #6BCB77;
-    width: 5rem;
-    height: 5rem;
     
 }
 
-#nosotros, #adoptar, #contacto, #novedades {
+#nosotros, #adoptar, #contacto{
     margin: 0 3rem;
 }
 
@@ -142,9 +147,9 @@ footer p {
 
 
 .titulo-principal {
-    padding: 0.6rem;
-    margin: 20px auto;
-    border-radius: 30px;
+    padding: 0.7rem;
+    margin: 1.5rem auto;
+    border-radius: 2rem;
     font-size: 1.6em;
     text-align: center;
     border: #479d5b solid 3px;
@@ -198,6 +203,10 @@ footer p {
     font-size: 1.4em;
 }
 
+.card-content a:hover {
+    color: #6BCB77;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -230,17 +239,29 @@ details summary{
 
 details summary:hover, details summary:focus {
     background-color: #6BCB77;
-    border: none;
+    border: #6BCB77 solid 3px;
     color: #FFF9F1;
 }
 
 details p {
-    margin: 0.8rem 
+    margin: 0.5rem 
 }
 
 .check {
     color: #6BCB77;
     margin: 0.2rem;
+}
+
+.donate-info {
+    display: flex;
+    justify-content: center;
+
+}
+
+.donate-info p {
+    background-color: #F9E79F;
+    border-radius: 3rem;
+    padding: 0.4rem 0.8rem;
 }
 
 /* Nosotros*/
@@ -283,20 +304,63 @@ details p {
 }
 
 h2 {
-    padding: 0.5rem;
+    padding: 0.7rem;
     font-size: 1.7em;
     color: #6BCB77;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 p {
+    padding: 0.7rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #FFA552;
+    font-weight: 600;
     padding: 0.5rem;
+}
+
+.highlights {
+    font-weight: bold;
+    color: #FFA552;
+
+}
+
+.highlights-ph {
+    font-weight: bold;
+    color: #6BCB77;
+
 }
 
 /* Contacto*/
 
+.social-media-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 10rem;
+}
+
+#instagram, #whatsapp {
+    background-color: #F9E79F;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    margin: 0.5rem;
+
+}
+
+#instagram:hover, #whatsapp:hover {
+    color: #6BCB77;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
     
 }
@@ -308,6 +372,7 @@ p {
     padding: 2rem;
     border-radius: 3rem;
     align-items: center;
+    margin: 1rem;
 
 }
 
@@ -317,7 +382,7 @@ p {
 }
 
 input, textarea, select {
-    border: none;
+    border: solid 2px #F9E79F;
     border-radius: 2rem;
     padding: 0.5rem;
     width: 100%;
@@ -334,11 +399,13 @@ textarea {
     outline: none;
 }
 
+
 #submit {
     background-color: #FFA552;
     color: #FFF9F1;
     font-weight: bold ;
     transition: all ease-in 200ms;
+    border: solid 2px #F9E79F;
 }
 
 #reset {
@@ -346,18 +413,44 @@ textarea {
     background-color: #D6D6D6;
     font-weight: 600;
     transition: all ease-in 200ms;
-    border: none;
+    
     
 }
 
 #submit:hover {
     background-color: #6BCB77;
     color: #FFF9F1;
-    border: none;
+    border: solid 2px #F9E79F;
+
 }
 
 #reset:hover {
     background-color: #7D7D7D;
-    color: #D6D6D6 ;
+    color: #D6D6D6;
     border: none;
+}
+
+/*Galeria*/
+.gallery-container {
+    display: flex;
+    
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+}
+
+.gallery-container img:hover {
+    cursor: pointer;
+    filter: brightness(0.4);
+    
 }
